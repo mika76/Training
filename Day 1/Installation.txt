@@ -1,0 +1,19 @@
+install node.js https://nodejs.org/en/download/
+go to c:\Program Files\nodejs
+
+open command prompt as admin
+run the following:
+
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+
+
+choco install nodejs.install –y
+choco install git –y
+choco install VisualStudioCode -y  
+
+npm install -g npm
+npm install -g -production windows-build-tools
+npm install -g ethereumjs-testrpc
+npm install -g truffle
+
+https://davidburela.wordpress.com/2016/11/18/configuring-visual-studio-code-for-ethereum-blockchain-development/
