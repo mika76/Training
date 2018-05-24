@@ -15,3 +15,6 @@
 
 8. To install a blank template - truffle unbox webpack
 
+
+The build tools for Visual Studio 2010 (Platform Toolset = 'v100') cannot be found. To build using the v100 build tools, please in
+stall Visual Studio 2010 build tools.

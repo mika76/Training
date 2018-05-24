@@ -1,0 +1,18 @@
+node
+Web3 = require('web3')
+web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+web3.eth.accounts
+code = fs.readFileSync('Voting.sol').toString()
+solc = require('solc')
+compiledCode = solc.compile(code)
+abiDefinition = JSON.parse(compiledCode.contracts[':SuggestionBox'].interface)
+VotingContract = web3.eth.contract(abiDefinition)
+byteCode = compiledCode.contracts[':SuggestionBox'].bytecode
+deployedContract = VotingContract.new(['Suggestion 1','Suggestion 2','Suggestion 3'],{data: byteCode, from: web3.eth.accounts[0], gas: 4700000})
+deployedContract.address
+contractInstance = VotingContract.at(deployedContract.address)
+contractInstance.totalVotesFor.call('Suggestion 1')
+contractInstance.contractInstance.voteForSuggestion('Suggestion 1', {from: web3.eth.accounts[0]})('Suggestion 1', {from: web3.eth.accounts[0]})
+contractInstance.contractInstance.voteForSuggestion('Suggestion 1', {from: web3.eth.accounts[0]})('Suggestion 1', {from: web3.eth.accounts[0]})
+contractInstance.contractInstance.voteForSuggestion('Suggestion 1', {from: web3.eth.accounts[0]})('Suggestion 1', {from: web3.eth.accounts[0]})
+contractInstance.totalVotesFor.call('Suggestion 1').toLocaleString()
