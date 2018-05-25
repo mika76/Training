@@ -14,4 +14,3 @@
 
 
 8. To install a blank template - truffle unbox webpack
-

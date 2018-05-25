@@ -1,0 +1,4 @@
+geth  --datadir="~/test/PrivateChain" --networkid 9876
+geth  init "C:\Users\Loui\Desktop\Blockchain Dev\Day 2\customgenesis.json" --datadir="~/test/PrivateChain"
+geth  --rpc --networkid=9876 --maxpeers=0 --datadir="~/test/PrivateChain"  --rpccorsdomain "*" --rpcapi "eth,web3,personal,net,miner,admin,debug" 
+
