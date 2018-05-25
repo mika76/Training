@@ -20,3 +20,5 @@ truffle explanation
 practical 
 
 eth.sendTransaction({from: "0xabff0c63d6cba5d7997093d74dd5a2ae057da289", to: "0x627306090abaB3A6e1400e9345bC60c78a8BEf57", value: web3.toWei(0.1, "ether"),gas:22000,gasPrice:web3.toWei(45,"Shannon"),data: web3.toHex('Test Tx')})
+
+web3.fromWei(eth.getBalance('0x627306090abaB3A6e1400e9345bC60c78a8BEf57'), "ether")
