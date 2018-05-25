@@ -1,0 +1,22 @@
+demo deployment in node
+practical
+
+demo private chain 
+- show testrpc
+- show geth
+- show azure & link it to metamask
+
+
+
+promises
+
+truffle explanation
+- how to download
+- how to compile
+- show code
+- test code
+- run code
+
+practical 
+
+eth.sendTransaction({from: "0xabff0c63d6cba5d7997093d74dd5a2ae057da289", to: "0x627306090abaB3A6e1400e9345bC60c78a8BEf57", value: web3.toWei(0.1, "ether"),gas:22000,gasPrice:web3.toWei(45,"Shannon"),data: web3.toHex('Test Tx')})
